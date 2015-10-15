@@ -1,0 +1,16 @@
+.DS_Store
+/js/bower
+/node_modules
+npm-debug.log
+#/js/production.js
+/js/modernizr-custom.js
+#style.css
+*.map
+dploy.yaml
+.htaccess
+.idea
+atlassian-ide-plugin.xml
+composer.phar
+thanks.iml
+vendor/
+

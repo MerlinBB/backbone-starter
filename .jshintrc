@@ -1,0 +1,32 @@
+{
+    "curly": true,
+    "eqeqeq": true,
+    "strict": true,
+    "evil": true,
+    "indent": 4,
+    "undef": true,
+    "sub": true,
+    "white": true,
+    "browser": true,
+    "quotmark": "double",
+    "trailing": true,
+    "globals": {
+        "jQuery": true,
+        "console": true,
+        "Autolinker": true,
+        "alert": true,
+        "confirm": true,
+        "prompt": true,
+        "_": true,
+        "Polyglot": true,
+        "Backbone": true,
+        "Modernizr": true,
+        "moment": true,
+        "rome": true,
+        "List": true,
+        "d3": true,
+        "Starter": true,
+        "module": true,
+        "require": true
+    }
+}

@@ -1,0 +1,31 @@
+.spinner {
+    margin:200px auto 0;
+    margin:25vh auto 0;
+    .square(80px);
+    font-size:10px;
+    position:relative;
+    text-indent:-9999em;
+    direction:ltr;
+    border-top:3px solid rgba(0, 0, 0, 0.2);
+    border-right:3px solid rgba(0, 0, 0, 0.2);
+    border-bottom:3px solid rgba(0, 0, 0, 0.2);
+    border-left:3px solid #000;
+    transform:translateZ(0);
+    will-change:transform;
+    animation:load 0.7s infinite ease-out;
+}
+.spinner,
+.spinner::after {
+    border-radius:50%;
+    width:10em;
+    height:10em;
+}
+
+@keyframes load {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}

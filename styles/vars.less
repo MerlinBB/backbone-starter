@@ -1,0 +1,49 @@
+//----------------------------------------------------------------------------//
+// Variables
+//----------------------------------------------------------------------------//
+
+
+//----------------------------------------------------------------------------//
+// Colors
+//----------------------------------------------------------------------------//
+
+@bg:                        #dfdfdf;
+
+// Highlights
+@highlight:           #1cb4e6;
+@highlight-light:     lighten(@highlight, 5%);
+@highlight-dark:      darken(@highlight, 5%);
+
+@highlight-alt:       #ef0266;
+@highlight-alt-light: lighten(@highlight-alt, 5%);
+@highlight-alt-dark:  darken(@highlight-alt, 5%);
+
+
+//----------------------------------------------------------------------------//
+// Scaffolding
+//----------------------------------------------------------------------------//
+
+
+@space:                        18px;
+
+@screen-sm-min:                768px;
+@screen-md-min:                992px;
+@screen-lg-min:                1200px;
+
+@container-sm:                 ((720px + @grid-gutter-width));
+@container-md:                 ((940px + @grid-gutter-width));
+@container-lg:                 ((1140px + @grid-gutter-width));
+
+@grid-columns:                 12;
+@grid-gutter-width:            30px;
+
+@grid-float-breakpoint:        @screen-sm-min;
+@grid-float-breakpoint-max:    (@grid-float-breakpoint - 1);
+
+.container {
+    .container-fixed();
+    @media (min-width: @screen-sm-min) { width: @container-sm; }
+    @media (min-width: @screen-md-min) { width: @container-md; }
+    @media (min-width: @screen-lg-min) { width: @container-lg; }
+}
+

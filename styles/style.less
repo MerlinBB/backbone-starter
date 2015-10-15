@@ -1,0 +1,122 @@
+/*!
+    Starter by Merlin Mason
+    License: The MIT License (MIT)
+*/
+
+
+//----------------------------------------------------------------------------//
+//  Setup & Create Grid
+//----------------------------------------------------------------------------//
+
+
+@charset "UTF-8";
+@import "reset.less";
+@import "vars.less";
+@import "helpers.less";
+
+@import "modules/grid";
+@import "modules/spinner";
+@import "modules/typography";
+
+::selection {
+    background:@highlight;
+    color:#fff;
+    text-shadow:none;
+}
+
+* {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+
+.row { .make-row(); }
+.make-grid-columns();
+.make-grid(xs);
+@media (min-width: @screen-sm-min) { .make-grid(sm); }
+@media (min-width: @screen-md-min) { .make-grid(md); }
+@media (min-width: @screen-lg-min) { .make-grid(lg); }
+
+
+//----------------------------------------------------------------------------//
+//  Forms & Buttons
+//----------------------------------------------------------------------------//
+
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+textarea {
+    padding:(@space/2);
+    border:none;
+    .placeholder();
+    &:hover {
+
+    }
+    &:focus {
+        outline:none;
+    }
+}
+
+.btn,
+button,
+input[type="submit"] {
+
+    &:hover {
+
+    }
+    &:focus {
+        outline:none;
+    }
+}
+
+
+//----------------------------------------------------------------------------//
+//  Header
+//----------------------------------------------------------------------------//
+
+
+.page-header {
+    @media (min-width:@screen-sm-min) { }
+    @media (min-width:@screen-md-min) { }
+    @media (min-width:@screen-lg-min) { }
+}
+
+
+//----------------------------------------------------------------------------//
+//  Content
+//----------------------------------------------------------------------------//
+
+.menu {
+    padding:@space;
+    background:#333;
+    text-align:center;
+    color:#fff;
+    margin-bottom:(@space * 2);
+}
+
+table {
+    width:100%;
+    thead tr {
+        border-bottom:1px solid #666;
+    }
+    th {
+        padding:6px;
+        text-align:left;
+        font-weight:bold;
+    }
+    td {
+        padding:6px;
+    }
+}
+
+
+//----------------------------------------------------------------------------//
+//  Footer
+//----------------------------------------------------------------------------//
+
+
+.page-footer {
+    @media (min-width:@screen-sm-min) { }
+    @media (min-width:@screen-md-min) { }
+    @media (min-width:@screen-lg-min) { }
+}
